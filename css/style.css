@@ -1,0 +1,246 @@
+@import './reset.min.css';
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/vazir.eot') format('eot'),
+    url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff2') format('woff2'),
+    url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+  direction: rtl;
+  font-family: 'Vazir';
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================== HeaderOne =============================== */
+
+.header-one {
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+}
+
+.header-one .header-one-right {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header-one .header-one-right p {
+  font-size: 15px;
+}
+
+.header-one .header-one-left {
+  width: 50%;
+  height: 3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-one .header-one-left ul {
+  display: flex;
+  text-align: left;
+}
+
+.header-one .header-one-left ul li {
+  margin: 0 8px 0 0;
+  height: 100%;
+}
+
+.header-one .header-one-left ul li a {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.header-one .header-one-left ul li a:hover {
+  color: #faa000;
+}
+
+/* ============================== HeaderTwo =============================== */
+
+#header-two {
+  width: 100%;
+  height: 9vh;
+  color: #fff;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+
+.header-two {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-two-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-two-item .icon {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.header-two-item:nth-child(1) .desc p:nth-last-child(1) {
+  margin-top: 8px;
+  color: #dadada;
+}
+
+.header-two-item:nth-child(2) .icon {
+  cursor: pointer;
+  transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+}
+
+.header-two-item:nth-child(2) .icon:hover {
+  color: #faa000;
+}
+
+.header-two-item:nth-child(3) {
+  position: relative;
+}
+
+.header-two-item:nth-child(3) .icon {
+  margin-left: 200px;
+}
+
+.header-two-item:nth-child(3) .desc p:nth-child(1) {
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+
+.header-two-item:nth-child(3) .desc p:nth-child(2) {
+  margin-top: 25px;
+}
+
+/* ============================== Slider =============================== */
+
+.slider {
+  background-image: url(../img/p1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 88vh;
+  color: #fff;
+}
+
+.slider-desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider-desc h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.slider-desc .typed {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 30px;
+  color: #faa000;
+}
+
+/* ============================== Header =============================== */
+
+header {
+  width: 100%;
+  height: 9vh;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  width: 35%;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header nav ul li::after {
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: #faa000;
+  position: absolute;
+  bottom: 0;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+}
+
+header nav ul li:hover::after {
+  width: 100%;
+}
+
+header nav ul a {
+  color: #fff;
+  font-size: 18px;
+}
+
+header nav .header-logo {
+  height: 7vh;
+}
+
+header nav .header-logo img {
+  width: 100%;
+  height: 100%;
+}
